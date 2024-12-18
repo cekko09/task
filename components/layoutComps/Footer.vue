@@ -7,10 +7,10 @@
             <h2 class="text-xl font-bold">Get a Free Quote</h2>
             <p class="text-sm">Subscribe to receive updates and exclusive offers.</p>
           </div>
-          <form @submit.prevent="handleSubscribe" class="mt-4 md:mt-0 flex items-center space-x-4">
+          <form  class="mt-4 md:mt-0 flex items-center space-x-4">
             <input
               type="email"
-              v-model="email"
+              
               placeholder="Your email address"
               class="w-full md:w-auto px-4 py-2  text-white rounded-lg focus:ring-2 focus:ring-[#DBA65A] outline-none"
               required
