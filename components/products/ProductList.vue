@@ -20,7 +20,7 @@
                         <p class="text-gray-600 mt-2">{{ product.description }}</p>
                         <div class="flex items-center justify-between mt-4">
                             <span class="text-gray-800 font-bold">
-                                {{ product.price | currency }}
+                                {{ product.price | currency }} $
                             </span>
                             <nuxt-link :to="{ name: 'products-id', params: { id: 1 } }" 
                                 class="px-4 flex py-2 bg-[#DBA65A] text-white text-sm font-semibold rounded border border-[#DBA65A] hover:bg-white hover:text-[#DBA65A] transition-colors duration-300">

@@ -4,5 +4,17 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss'
-  ]
+  ],
+  ssr: false, 
+  nitro: {
+    preset: 'vercel', 
+  },
+  vite: {
+    optimizeDeps: {
+      include: ['naive-ui', 'vue'],
+      esbuildOptions: {
+        format: 'esm'
+      }
+    }
+  }
 })
